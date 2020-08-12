@@ -1,11 +1,15 @@
+import {Card, CardContent, Typography} from '@material-ui/core';
+
 const fetch = require("node-fetch");
 
 function Film({film}) {
     return (
-        <di>
-            <h1>{film.title}</h1>
-            <p>{film.description}</p>
-        </di>
+        <Card>
+            <CardContent>
+                <Typography variant="h5" component="h2">{film.title}</Typography>
+                <Typography variant="body1" component="p">{film.description}</Typography>
+            </CardContent>
+        </Card>
     )
 }
 
